@@ -41,7 +41,7 @@ app.controller('diagramController', function ($scope) {
             categories: []
         },        
         series: [{
-            name: 'Длина слова',
+            name: 'Количество повторений',
             data: []
         }],
         title: {
@@ -54,11 +54,11 @@ app.controller('diagramController', function ($scope) {
     var adata = [];
     var categories =[];
 
-    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
+    angular.forEach($scope.chipher.text.split(""), function(value, key) {
       this.push(value);
     }, categories);
 
-    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
+    angular.forEach($scope.chipher.text.split(""), function(value, key) {
       this.push(value.length);
     }, adata);
 
