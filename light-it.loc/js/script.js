@@ -27,6 +27,7 @@ app.controller('ChipherController',
 );
 
 app.controller('diagramController', function ($scope) {
+
     $scope.highchartsNG = {
         options: {
             chart: {
@@ -49,8 +50,22 @@ app.controller('diagramController', function ($scope) {
         loading: false
     };
     $scope.$watch('chipher.text', function(newValue, oldValue){
-    $scope.highchartsNG.series[0].data[0] = $scope.chipher.text.length;
-    $scope.highchartsNG.title.text = 'График по слову "'+$scope.chipher.text+'"';
-    });
+  
+    var adata = [];
+    var categories =[];
+
+    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
+      this.push(value);
+    }, categories);
+
+    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
+      this.push(value.length);
+    }, adata);
+
+    $scope.highchartsNG.xAxis.categories = categories;
+    $scope.highchartsNG.series[0].data = adata;
+      
+    $scope.highchartsNG.title.text = 'График по тексту "'+$scope.chipher.text+'"';
+    }, true);
 
 });
