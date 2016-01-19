@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Task Light-IT</title>
 		<link rel="shortcut icon" href="/img/Favicon_16x16.png">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-    	<link rel="stylesheet" href="css/style.css">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    	<link rel="stylesheet" href="/css/style.css">
     	<script src="js/angular.min.js"></script>
     	<script src="js/angular-animate.js"></script>
     	<script src="js/ui-bootstrap-tpls-1.0.3.min.js"></script>
@@ -95,7 +95,7 @@
 							<ul>
 								<li><i class="fa fa-envelope"></i> <span>y.kostenko111@ya.ru</span></li>
 								<li><i class="fa fa-phone-square"></i> <span>+380996351647</span></li>
-								<li><i class="fa fa-skype"></i> <span>yuriy.kostenko.</span></li>
+								<li><i class="fa fa-skype"></i> <span>yuriy.kostenko</span></li>
 							</ul>
 						</div>
 					</div>
