@@ -95,7 +95,7 @@
 							<ul>
 								<li><i class="fa fa-envelope"></i> <span>y.kostenko111@ya.ru</span></li>
 								<li><i class="fa fa-phone-square"></i> <span>+380996351647</span></li>
-								<li><i class="fa fa-skype"></i> <span>yuriy.kostenko</span></li>
+								<li><i class="fa fa-skype"></i> <span>yuriy.kostenko.</span></li>
 							</ul>
 						</div>
 					</div>
