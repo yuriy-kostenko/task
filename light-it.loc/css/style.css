@@ -1,0 +1,178 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Head
+ * 2.0 - Content
+ * 3.0 - Footer
+ * 4.0 - Media Queries
+ *    4.1 - Mobile Max Width 767px
+ *    4.2 - Tablet Width 768 - 991px
+ *    4.3 - Desktop 992 - 1199px
+ */
+
+
+/**
+ * 1.0 - Head
+ */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-brand {
+    padding: 10px 15px;
+}
+
+.header-image {
+    height: 200px;
+    background-color: #3488b2;
+}
+
+.header-image h1 {
+    padding: 60px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/**
+ * 2.0 - Content
+ */
+
+.wrapp-content {
+    margin: 40px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.control-panel {
+    padding-top: 20px;
+}
+
+.control-panel button {
+    display: block;
+    margin: 0 auto;
+}
+
+.row-y {
+    margin-bottom: 20px;
+}
+
+.rotate {
+    text-align: center;
+}
+
+.input-group {
+    width: 166px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 30px 0 30px;
+}
+
+.highcharts-container {
+    padding-top: 40px;
+}
+
+/**
+ * 3.0 - Footer
+ */
+
+.site-footer {
+    margin-top: 100px;
+    background-color: #256d91;
+}
+
+.myinfo {
+    padding: 25px 0;
+}
+
+.myinfo img {
+    float: left;
+    margin-right: 20px;
+}
+
+.myinfo p {
+    padding-top: 35px;
+    color: #e0e0e0;
+}
+
+.my-contacts ul {
+    margin: 33px;
+}
+
+.my-contacts ul > li {
+    line-height: 2;
+    list-style: none;
+    color: #e0e0e0;
+}
+
+.my-contacts ul > li span {
+    padding-left: 10px;
+}
+
+.site-info {
+    min-height: 40px;
+    background-color: #175777;
+}
+
+.site-info p {
+    font-size: 14px;
+    padding-top: 10px;
+    color: #e5e5e5;
+}
+
+
+/**
+ * 4.0 - Media Queries
+ */
+
+/* 4.1 - Mobile Max Width 767px */
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        float: none;
+    }
+    .about-me img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .my-contacts ul {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* 4.2 - Tablet Width 768 - 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-2 {
+        padding: 0;
+    }
+    .input-group {
+        padding: 10px 35px 0 35px;
+    }
+    .input-group .input-group-addon {
+        display: none;
+    }
+    .input-group input {
+        border-radius: 0;
+    }
+    .btn-success {
+    }
+}
+
+/* 4.3 - Desktop 992 - 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .input-group {
+        padding: 10px 30px 0 12px;
+    }
+}
