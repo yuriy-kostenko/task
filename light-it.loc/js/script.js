@@ -41,7 +41,7 @@ app.controller('diagramController', function ($scope) {
             categories: []
         },        
         series: [{
-            name: 'Длина слова',
+            name: 'Количество повторений',
             data: []
         }],
         title: {
@@ -52,11 +52,10 @@ app.controller('diagramController', function ($scope) {
     $scope.$watch('chipher.text', function(newValue, oldValue){
   
         var adata = [];
-        var categories =[];
+        var categories = [ 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z' ];
 
-        angular.forEach($scope.chipher.text.split(" "), function(value, key) {
-          categories.push(value);
-          adata.push(value.length);
+        categories.forEach( function(value) {
+          adata.push( $scope.chipher.text.split(new RegExp(value, 'i')).length - 1 );
         });
 
         $scope.highchartsNG.xAxis.categories = categories;
