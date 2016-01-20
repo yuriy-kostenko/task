@@ -41,7 +41,7 @@ app.controller('diagramController', function ($scope) {
             categories: []
         },        
         series: [{
-            name: 'Количество повторений',
+            name: 'Длина слова',
             data: []
         }],
         title: {
