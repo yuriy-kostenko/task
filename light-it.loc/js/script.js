@@ -53,12 +53,12 @@ app.controller('diagramController', function ($scope) {
   
     var adata = [];
     var categories =[];
+    var alph = array = [ 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z' ];
 
-    angular.forEach($scope.chipher.text.split(""), function(value, key) {
+    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
       this.push(value);
     }, categories);
-
-    angular.forEach($scope.chipher.text.split(""), function(value, key) {
+    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
       this.push(value.length);
     }, adata);
 
