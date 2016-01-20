@@ -35,7 +35,7 @@ app.controller('diagramController', function ($scope) {
             }
         },
         yAxis: {
-            max: 5
+            max: 15
         },
         xAxis: {
             categories: []
