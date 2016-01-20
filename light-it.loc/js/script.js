@@ -51,21 +51,19 @@ app.controller('diagramController', function ($scope) {
     };
     $scope.$watch('chipher.text', function(newValue, oldValue){
   
-    var adata = [];
-    var categories =[];
-    var alph = array = [ 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z' ];
+        var adata = [];
+        var categories =[];
 
-    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
-      this.push(value);
-    }, categories);
-    angular.forEach($scope.chipher.text.split(" "), function(value, key) {
-      this.push(value.length);
-    }, adata);
+        angular.forEach($scope.chipher.text.split(" "), function(value, key) {
+          categories.push(value);
+          adata.push(value.length);
+        });
 
-    $scope.highchartsNG.xAxis.categories = categories;
-    $scope.highchartsNG.series[0].data = adata;
-      
-    $scope.highchartsNG.title.text = 'График по тексту "'+$scope.chipher.text+'"';
+        $scope.highchartsNG.xAxis.categories = categories;
+        $scope.highchartsNG.series[0].data = adata;
+          
+        $scope.highchartsNG.title.text = 'График по тексту "'+$scope.chipher.text+'"';
+
     }, true);
 
 });
